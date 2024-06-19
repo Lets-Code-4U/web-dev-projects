@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* navigation bar starts here */
+.header-div {
+  margin: 0px;
+  padding: 15px;
+  width: 100%;
+  background-color: #b25aff;
+  border: 1px solid black;
+}
+
+.navigation-bar-list {
+  color: white;
+  list-style: none;
+  display: flex;
+  text-wrap: nowrap;
+  margin-left: 3.5rem;
+  margin-right: 30px;
+}
+
+.navigation-list-item {
+  font-size: 1.05rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navigation-bar-list a {
+  font-size: 1.05rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.navigation-list-item:hover {
+  color: black;
+  text-shadow: 0 0 1px rgb(0, 0, 0);
+  cursor: pointer;
+}
+.dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  margin-top: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.812);
+  background-color:transparent;
+  backdrop-filter: blur(20px);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.dropdown a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.content:hover .dropdown {
+  display: block;
+}
+.dropdown a:hover {
+  color: #fff;
+  background-color: #5c5c5c;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+}
+.navigation-bar-list i {
+  margin-left: 55px;
+}
+/* navigation bar ends here */
+
+/* Product image and description starts here */
+
+.product-container-div {
+  display: flex;
+  gap: 60px;
+  margin: 50px 30px;
+}
+
+.product-image img{
+    height: 400px;
+    width: 300px;
+}
+.offer-div{
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;   
+}
+.offer-div > div{
+    padding: 10px;
+    border: 0.5px solid rgb(0,0,0,0.4);
+    border-radius: 10px;
+}
+.offer-div p span{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(255, 70, 70);
+}
+
+/* Product image and description ends here */
+
+

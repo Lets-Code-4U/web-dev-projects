@@ -1,0 +1,578 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-linear-gradient(#ead1ff, #d9d0ec);
+  background-size: cover;
+}
+
+/* Navigation bar starts here */
+.header-div {
+  margin: 0px;
+  padding: 0.2rem;
+  width: 100%;
+  background-color: #b25aff;
+  border: 1px solid black;
+}
+
+.navigation-bar-list {
+  color: white;
+  list-style: none;
+  display: flex;
+  text-wrap: nowrap;
+  margin-left: 3.5rem;
+  margin-right: 30px;
+}
+
+.navigation-list-item {
+  font-size: 1.05rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navigation-bar-list a {
+  font-size: 1.05rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.navigation-list-item:hover {
+  color: black;
+  text-shadow: 0 0 1px rgb(0, 0, 0);
+  cursor: pointer;
+}
+.dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.812);
+  background-color: #484343;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.dropdown a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.content:hover .dropdown {
+  display: block;
+}
+.dropdown a:hover {
+  background-color: #5c5c5c;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+}
+
+/* Navigation bar ends here */
+
+/* Sign up and login button stats here*/
+.header-search_box-sign-login-button {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 500px;
+}
+
+.headerButtons {
+  height: 27px;
+  border: 2px solid #770dd3;
+  border-radius: 5px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header-signup-button {
+  background-color: #eae7f0;
+  margin-left: 100px;
+}
+
+.header-signup-button:hover {
+  background-color: #d8b3f8;
+  box-shadow: 2px 2px 5px rgba(58, 57, 59, 0.908);
+}
+
+.header-login-button {
+  background-color: #eae7f0;
+  margin-left: 20px;
+}
+
+.header-login-button:hover {
+  background-color: #d8b3f8;
+}
+
+/* Sign up and login button ends here */
+
+/* Division below silent sone text and head navbar, starts here*/
+.div-below-navbar {
+  margin: 125px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+}
+
+.below-navbar-card1 {
+  display: flex;
+  justify-content: center;
+
+  height: 400px;
+  width: 625px;
+  background-color: rgb(255, 164, 178);
+
+  border-bottom-left-radius: 50%;
+}
+
+.below-navbar-card2 {
+  height: 400px;
+  width: 550px;
+  background-color: #c1c1c1;
+  background-image: url(assets/girl-working-on-laptop.jpg);
+  background-size: cover;
+
+  border-top-right-radius: 50%;
+}
+
+.below-navbar-card1-para-icon {
+  margin: 50px;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 50%;
+}
+
+.icon {
+  font-size: 60px;
+  text-shadow: 0 0 10px rgb(60, 60, 95);
+}
+
+.below-navbar-card1-para {
+  height: 140px;
+  width: 405px;
+  margin: 15px;
+  padding: 0 15px 0 50px;
+  font-family: "Source Code Pro";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.heart-icon {
+  font-size: 30px;
+  color: rgba(255, 0, 0, 0.753);
+}
+
+.programming-text {
+  font-size: 30px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.programming-text:hover {
+  font-weight: bold;
+  font-size: 33px;
+  text-shadow: 0 0 10px rgb(81, 81, 116);
+}
+
+.below-navbar-card1-para::first-letter {
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgb(81, 81, 116);
+}
+
+/* Division below silent sone text and head navbar ends here */
+
+/* Division for silent zone text starts here*/
+.div-for-silent-zone {
+  margin-left: 100px;
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.heading-for-silent-zone {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.silent-zone {
+  color: #792bbd;
+  letter-spacing: 2px;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.para-below-silent-zone {
+  margin-top: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  font-style: italic;
+  font-variant: small-caps;
+  color: rgba(0, 0, 0, 0.662);
+}
+
+/* Division for silent zone text ends here*/
+
+/* Image card container starts here */
+.second-header-grid-container {
+  margin: 100px;
+  padding: 50px 0px 50px 0px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+}
+
+.second-header-books-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 400px;
+  width: 400px;
+}
+
+.books-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 300px;
+  border-radius: 20px;
+  background-color: #d0d0d0;
+  padding: 20px;
+  transition: 0.3s ease-in;
+}
+.books-card:hover {
+  box-shadow: 20px 20px 70px rgba(0, 0, 0, 0.7),
+    inset -20px -20px 70px rgba(255, 255, 255, 0.7);
+}
+
+.img-of-card-box {
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.books-card-para {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.books-card-para::first-letter {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 1px 0 2px rgba(0, 0, 0, 0.584);
+}
+
+.div-books-card-para {
+  margin: 20px;
+  padding: 10px;
+}
+
+/* Image card container ends here */
+
+/*Why we need books section stats here */
+.need-of-books-section {
+  padding: 20px;
+  margin: 10px 100px;
+  background-color: rgba(255, 250, 250, 0.512);
+}
+.need-of-books-heading {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.need-of-books-heading > h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.need-of-books-para {
+  margin-left: 30px;
+}
+.need-of-books-para > p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+.need-of-books-para > p > span {
+  color: rgb(255, 89, 0);
+}
+.tree-on-book-img {
+  float: right;
+  height: 400px;
+  width: 400px;
+  margin: 0 15px 15px 15px;
+  border: 0;
+  border-radius: 20px;
+}
+.tree-on-book-img:hover {
+  opacity: 0.9;
+}
+
+/*Why we need books section ends here */
+
+/* Poets intro strats here */
+.section-below-image-card {
+  background-color: rgb(0, 0, 0, 0.1);
+  margin: 10px 100px;
+  padding: 30px;
+  border-left: 10px solid #bd72ff;
+}
+.heading-for-poets-intro {
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.div-below-image-card {
+  display: flex;
+  flex-direction: row;
+}
+.sub-div-below-image-card {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+.image-div-below-image-card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: fit-content;
+}
+.image-div-below-image-card > img {
+  border: 0 solid black;
+  border-radius: 50%;
+  transition: 0.2s ease-in;
+}
+.image-div-below-image-card > img:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.714);
+}
+.para-div-below-image-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
+}
+.para-div-below-image-card > a > p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+}
+.para-div-below-image-card > a {
+  text-decoration: none;
+  color: black;
+}
+.para-div-below-image-card > a:hover {
+  color: rgb(88, 88, 204);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.477);
+}
+.para-div-below-image-card > a > p > span {
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Poets intro ends here */
+
+/* New Arrivas Section starts here*/
+.new-arrivals-section {
+  background-color: rgba(245, 245, 245, 0.847);
+  margin: 40px 100px;
+  padding: 30px;
+  border: 2px solid #aa49ff;
+  border-radius: 20px;
+}
+.div-new-arrivals-section {
+  color: #000000b4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+.new-arrivals-section-books-images-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.new-arrivals-section-books-images-div > a > img {
+  text-decoration: none;
+  border-radius: 20px;
+  height: 150px;
+  width: 150px;
+  margin: 20px;
+  transition: 0.3s ease-in;
+}
+.new-arrivals-section-books-images-div > a > img:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.741),
+    inset -0 -0 10px rgba(250, 128, 114, 0.947);
+}
+/* New Arrivas Section ends here*/
+
+/* FAQs section starts here */
+
+#faqs-section {
+  margin: 50px 100px;
+  padding: 30px;
+  background-color: rgba(248, 248, 248, 0.847);
+  border: none;
+  outline: none;
+}
+#faqs-section h2 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.779);
+}
+.faqs-div:hover {
+  background-color: rgba(228, 228, 228, 0.937);
+  border-radius: 20px;
+}
+
+.question-para {
+  margin: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.answer-para {
+  font-size: 15px;
+}
+
+/* FAQs section ends here */
+
+/* Footer section starts here */
+
+#footer-section {
+  padding: 50px 10px;
+
+  background-color: #383838;
+}
+.div-foorter-section {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  margin: 0 100px;
+}
+.div1 p {
+  margin: 10px 0;
+  color: #b190ce;
+  letter-spacing: 2px;
+  font-family: Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.div1 a i {
+  margin: 5px;
+  color: #fff;
+  letter-spacing: 10px;
+  font-size: 25px;
+  transition: all 0.2s;
+}
+.youtube:hover{
+  color: red;
+  transform: scale(1.3,1.3);
+  text-shadow: 2px 2px 100px rgba(255, 0, 0, 0.881);
+}
+.twitter:hover{
+  color: rgb(81, 128, 239);
+  transform: scale(1.3,1.3);
+  text-shadow: 2px 2px 100px  rgb(81, 128, 239);
+}
+.instagram:hover{
+ color: rgb(255, 134, 134);
+ transform: scale(1.3,1.3);
+ text-shadow: 2px 2px 100px  rgb(255, 134, 134);
+}
+.linkedin:hover{
+  color: rgb(90, 90, 212);
+  transform: scale(1.3,1.3);
+  text-shadow: 2px 2px 100px  rgb(67, 67, 157);
+}
+.github:hover{
+  transform: scale(1.3,1.3);
+}
+.div-contents .header-para {
+  margin: 10px 0;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16.5px;
+  color: #ebebeb;
+}
+.div-contents a {
+  color: #b3b3b3eb;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14.5px;
+}
+.div-contents a:hover {
+  color: #fff;
+}
+.div-contents a p {
+  margin: 5px 0;
+}
+.div4 p {
+  color: #b3b3b3eb;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14.5px;
+}
+.div4 p i {
+  margin: 2px;
+  color: #eaeaea;
+}
+
+.registered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+.registered p {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: #c8c8c8;
+}
+
+/* Footer section ends here */
